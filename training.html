@@ -78,26 +78,31 @@
                 <dd>순서에 증요한 의미가 있는 목록을 이야기한다. </dd>
              </dl>
 
+
             <!-- strong, em <> b, i -->
             <strong>강한 강조</strong>
             <em>강조</em> 
-
             <b>볼드체</b>
-            <i>이탈릭체</i>
+            <i>이탈릭체</i> <br />
+
 
             <!--  ins 첨부글, del 삭제글<> u, stike-->
             <ins>첨부하는 내용</ins>
-            <del>쓸대없는 내용. 변경되어 삭제될 내용</del>
+            <del>쓸대없는 내용. 변경되어 삭제될 내용</del> <br />
+
 
             <u>밑줄</u>
-            <strike>중간줄</strike>
+            <strike>중간줄</strike> <br />
+
 
             <!-- sup 윗첨자, sub아랫첨자-->
             2<sup>2</sup> : 제곱수, 2의 2승
-            H<sub>2</sub>0 : 물의 화학식
+            H<sub>2</sub>0 : 물의 화학식<br />
+
 
             <img src="images/20.jpg"/>
             <img src="./images/20.jpg"/>
+
 
             <style>
                 table, tr, td{
@@ -106,11 +111,26 @@
             </style>
             <!-- table 도표 -->
             <!-- table, tr 한줄,  td 한칸 -->
+            <!-- summary 요약, captiom 표제 -->
 
-            <table>
+            <table summary="표의요약, 학생명단">
+                <caption>[표1] 표의제목</caption>
+                <!-- thead, tbody, tfoot -->
+                <thead>
                 <tr>
-                    <td>1</td>
-                    <td>2</td>
+                    <!-- scope = col, row -->
+                    <th scope="col">제목1</th>
+                    <th scope="col">제목2</th>
+                    <th scope="col">제목3</th>
+                    <th scope="col">제목4</th>
+                    <th scope="col">제목5</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <!-- colspan 열늘이기(가로로 늘림), rowspan 행늘이기(세로로 늘림)-->
+                    <td colspan="2">1</td> <!-- 가로로 두칸 차지함 -->
+                    <td rowspan="2">2</td> <!-- 세로로 두칸 차지함-->
                     <td>3</td>
                     <td>4</td>
                 </tr>
@@ -120,7 +140,59 @@
                     <td>7</td>
                     <td>8</td>
                 </tr>
+                </tbody>
             </table>
+
+
+            	
+<style>
+        table{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+    </style>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    	
+<style>
+        table{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+    </style>
+    <table>
+        <tr>
+            <td colspan="2">up</td>
+            <td rowspan="2">right</td>
+        </tr>
+        <tr>
+            <td rowspan="2">left</td>
+            <td>center</td>
+        </tr>
+        <tr>
+            <td colspan="2">down</td>
+        </tr>
+    </table>
+            
 
         </body>
 </html>
