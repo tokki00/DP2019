@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>레이아웃1</title>
+        <meta charset="utf-8">
+        <style>
+            /*div,header,nav,footer,h1,h2,ul,li{
+                margin:10px;  바깥여백: 10px*/
+                /* border: solid 1px black; 경계선: 실선 1px두께 검은색*/   
+
+            header>ul>li{
+                float: left; /*둥둥떠다닌다:왼쪽기준*/
+                list-style : none; /*리스트모양 (동그라미)없음 */
+                padding-left: 10px;
+                padding-right: 10px;
+                border-right: solid 2px gray;  
+            }
+             header>ul>li:nth-child(5){
+                border: none; 
+            }
+            .clear { clear: both; height:0; overflow:hidden; }
+            .float_left{float: left;}
+            .float_right{float: right;}
+            h1{
+                margin: 0px;
+            }
+            h2{
+                margin: 0px;
+            }
+            header>ul{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            #zoom{
+                margin: 9px;
+            }
+            nav>ul{
+                margin-top:10px ;
+                margin-bottom:10px ;
+            }
+            nav>ul>li{
+                float:left;
+                list-style: none;
+                padding-left: 10px;
+                padding-right: 10px;
+                
+            }
+            nav{
+                background-color: #ccc;  
+                }
+            .container:nth-child(1){background-color: #98f;}
+            .container:nth-child(2){background-color: #5d9;}
+            .container:nth-child(3){background-color: #f76;}
+            .container:nth-child(4){background-color: #ec5;}
+                    </style>
+
+    </head>
+    <body>
+        <div id='wrap'>
+            <header>
+                <h1 class="float_left">
+                    <img src="images/layout1_head_logo.jpg" />
+                </h1>
+                <ul h1 class="float_left">
+                    <li>ABOUT</li>
+                    <li>SERBICES</li>
+                    <li>WORKS</li>
+                    <li>BLOG</li>
+                    <li>CONTACT US</li>
+                    <div class= "clear"></div>
+                </ul>
+                <div id="zoom" class="float_right">
+                    <img src="images/layout1_head_zoom.jpg" />
+                </div>
+                <div class="clear"></div>
+            </header>
+                
+            <nav>
+                <h2 class="float_left">
+                    See Our Works
+                </h2>
+                <ul class="float_right">
+                    <li>Web Design</li>
+                    <li>Icons</li>
+                    <li>Illustlations</li>
+                    <li>Misc</li>
+                    <div class= "clear"></div>
+                </ul>
+                <div class="clear"></div>
+            </nav>
+            <div>
+                <div class="container">
+                    <section>
+                        <h3>Wep Design</h3>
+                        <div class="contet_part">
+                            <img src="images/layout1_img1.jpg"/> 
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit.
+                                    Suspendisse sed leo tellus.Praesent
+                                    nec vehicula ligula, non laoreet ligula.
+                                    Maecenas at massa eget orci porttitor 
+                                    semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="contet_part">
+                                <img src="images/layout1_img1.jpg"/> 
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                        Consectetur adipiscing elit.
+                                        Suspendisse sed leo tellus.Praesent
+                                        nec vehicula ligula, non laoreet ligula.
+                                        Maecenas at massa eget orci porttitor 
+                                        semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                    </section>
+
+                </div>
+                <div class="container">
+                        <section>
+                            <h3>Wep Design</h3>
+                            <div class="contet_part">
+                                <img src="images/layout1_img1.jpg"/> 
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                        Consectetur adipiscing elit.
+                                        Suspendisse sed leo tellus.Praesent
+                                        nec vehicula ligula, non laoreet ligula.
+                                        Maecenas at massa eget orci porttitor 
+                                        semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="contet_part">
+                                    <img src="images/layout1_img1.jpg"/> 
+                                    <dl>
+                                        <dt>Lorem ipsum dolor sit amet</dt>
+                                        <dd>
+                                            Consectetur adipiscing elit.
+                                            Suspendisse sed leo tellus.Praesent
+                                            nec vehicula ligula, non laoreet ligula.
+                                            Maecenas at massa eget orci porttitor 
+                                            semper.
+                                        </dd>
+                                    </dl>
+                                </div>
+                        </section>
+    
+                    </div>
+                    <div class="container">
+                    <section>
+                        <h3>Wep Design</h3>
+                        <div class="contet_part">
+                            <img src="images/layout1_img1.jpg"/> 
+                            <dl>
+                                <dt>Lorem ipsum dolor sit amet</dt>
+                                <dd>
+                                    Consectetur adipiscing elit.
+                                    Suspendisse sed leo tellus.Praesent
+                                    nec vehicula ligula, non laoreet ligula.
+                                    Maecenas at massa eget orci porttitor 
+                                    semper.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="contet_part">
+                                <img src="images/layout1_img1.jpg"/> 
+                                <dl>
+                                    <dt>Lorem ipsum dolor sit amet</dt>
+                                    <dd>
+                                        Consectetur adipiscing elit.
+                                        Suspendisse sed leo tellus.Praesent
+                                        nec vehicula ligula, non laoreet ligula.
+                                        Maecenas at massa eget orci porttitor 
+                                        semper.
+                                    </dd>
+                                </dl>
+                            </div>
+                    </section>
+                    </div>
+                    <div class="container">
+                            <section>
+                                <h3>Wep Design</h3>
+                                <div class="contet_part">
+                                    <img src="images/layout1_img1.jpg"/> 
+                                    <dl>
+                                        <dt>Lorem ipsum dolor sit amet</dt>
+                                        <dd>
+                                            Consectetur adipiscing elit.
+                                            Suspendisse sed leo tellus.Praesent
+                                            nec vehicula ligula, non laoreet ligula.
+                                            Maecenas at massa eget orci porttitor 
+                                            semper.
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="contet_part">
+                                        <img src="images/layout1_img1.jpg"/> 
+                                        <dl>
+                                            <dt>Lorem ipsum dolor sit amet</dt>
+                                            <dd>
+                                                Consectetur adipiscing elit.
+                                                Suspendisse sed leo tellus.Praesent
+                                                nec vehicula ligula, non laoreet ligula.
+                                                Maecenas at massa eget orci porttitor 
+                                                semper.
+                                            </dd>
+                                        </dl>
+                                    </div>
+                            </section>
+        
+                        </div>
+
+                </div>
+            </div>
+            <footer>footer</footer>
+        
+        </div>
+
+
+
+    </body>
+
+
+
+</html>
