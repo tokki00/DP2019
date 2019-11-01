@@ -6,8 +6,14 @@
         <style>
             /*div,header,nav,footer,h1,h2,ul,li{
                 margin:10px;  바깥여백: 10px*/
-                /* border: solid 1px black; 경계선: 실선 1px두께 검은색*/   
+                /* border: solid 1px black; 경계선: 실선 1px두께 검은색*/  
 
+            header{
+                margin: 50px;
+            }
+            nav{
+                padding: 30px;
+            }
             header>ul>li{
                 float: left; /*둥둥떠다닌다:왼쪽기준*/
                 list-style : none; /*리스트모양 (동그라미)없음 */
@@ -52,7 +58,56 @@
             .container:nth-child(2){background-color: #5d9;}
             .container:nth-child(3){background-color: #f76;}
             .container:nth-child(4){background-color: #ec5;}
-                    </style>
+            .container{
+                padding: 30px;
+            }
+            .content_part{
+                float: left; /*둥둥떠다니게*/
+                width: 480px;
+                margin: 10px;
+            }
+            .container>section>h3{
+                color: white;
+            }
+            .container>section {
+                width: 1000px;
+                margin-left: auto; /*바깥여백-왼쪽자동  */
+                margin-right: auto;
+            }
+            .container dt{
+                font-weight: bold;
+                margin-top: 25px; 
+                margin-right;: 0px;
+                margin-bottom: 25px;
+                margin-left: 0px;
+                margin: 25px; /*네 방향 모두*/
+                margin: 25px 0px; /*상하 좌우*/
+                margin: 25px 0px 25px 0px; /*시계방향 상우하좐*/
+            }
+            .container dd{
+                margin:25px 0px;
+            }
+            footer li{
+                float:left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            footer ul{
+                padding: 0px;
+            }
+            footer{
+                background:#999;
+                padding: 30px;
+            }
+            #wrap{
+               /* width: 1100px;*/
+               min-width: 1100px;
+               max-width: 1920px;
+               margin-left: auto;
+               margin-right: auto;
+            }
+
+        </style>
 
     </head>
     <body>
@@ -92,7 +147,7 @@
                 <div class="container">
                     <section>
                         <h3>Wep Design</h3>
-                        <div class="contet_part">
+                        <div class="content_part">
                             <img src="images/layout1_img1.jpg"/> 
                             <dl>
                                 <dt>Lorem ipsum dolor sit amet</dt>
@@ -105,7 +160,7 @@
                                 </dd>
                             </dl>
                         </div>
-                        <div class="contet_part">
+                        <div class="content_part">
                                 <img src="images/layout1_img1.jpg"/> 
                                 <dl>
                                     <dt>Lorem ipsum dolor sit amet</dt>
@@ -118,13 +173,13 @@
                                     </dd>
                                 </dl>
                             </div>
+                            <div class="clear"></div>
                     </section>
-
                 </div>
                 <div class="container">
                         <section>
                             <h3>Wep Design</h3>
-                            <div class="contet_part">
+                            <div class="content_part">
                                 <img src="images/layout1_img1.jpg"/> 
                                 <dl>
                                     <dt>Lorem ipsum dolor sit amet</dt>
@@ -137,7 +192,7 @@
                                     </dd>
                                 </dl>
                             </div>
-                            <div class="contet_part">
+                            <div class="content_part">
                                     <img src="images/layout1_img1.jpg"/> 
                                     <dl>
                                         <dt>Lorem ipsum dolor sit amet</dt>
@@ -150,13 +205,13 @@
                                         </dd>
                                     </dl>
                                 </div>
+                                <div class="clear"></div>
                         </section>
-    
                     </div>
                     <div class="container">
                     <section>
                         <h3>Wep Design</h3>
-                        <div class="contet_part">
+                        <div class="content_part">
                             <img src="images/layout1_img1.jpg"/> 
                             <dl>
                                 <dt>Lorem ipsum dolor sit amet</dt>
@@ -169,7 +224,7 @@
                                 </dd>
                             </dl>
                         </div>
-                        <div class="contet_part">
+                        <div class="content_part">
                                 <img src="images/layout1_img1.jpg"/> 
                                 <dl>
                                     <dt>Lorem ipsum dolor sit amet</dt>
@@ -182,12 +237,13 @@
                                     </dd>
                                 </dl>
                             </div>
+                            <div class="clear"></div>
                     </section>
                     </div>
                     <div class="container">
                             <section>
                                 <h3>Wep Design</h3>
-                                <div class="contet_part">
+                                <div class="content_part">
                                     <img src="images/layout1_img1.jpg"/> 
                                     <dl>
                                         <dt>Lorem ipsum dolor sit amet</dt>
@@ -200,7 +256,7 @@
                                         </dd>
                                     </dl>
                                 </div>
-                                <div class="contet_part">
+                                <div class="content_part">
                                         <img src="images/layout1_img1.jpg"/> 
                                         <dl>
                                             <dt>Lorem ipsum dolor sit amet</dt>
@@ -213,20 +269,42 @@
                                             </dd>
                                         </dl>
                                     </div>
+                                    <div class="clear"></div>
                             </section>
-        
                         </div>
-
                 </div>
             </div>
-            <footer>footer</footer>
-        
+            <footer>
+                <div class="float_left">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Work</li>
+                        <li>Blog</li>
+                        <li>Contact us</li>
+                        <div class= "clear"></div>
+                    </ul>
+                    <div>
+                        ⓒ 2013 BlueBox. All Right Reserved.
+                    </div>
+                    <dvi>
+                        the loges in the design are the property
+                        of their respective owners/copyright holders.
+                    </dvi>
+                </div>
+                <ul class="float_right">
+                    <li><img src="images/layout1_footer_icon1.png"/></li>
+                    <li><img src="images/layout1_footer_icon2.png"/></li>
+                    <li><img src="images/layout1_footer_icon3.png"/></li>
+                    <li><img src="images/layout1_footer_icon4.png"/></li>
+                    <li><img src="images/layout1_footer_icon5.png"/></li>
+                    <li><img src="images/layout1_footer_icon6.png"/></li>
+                    <div class= "clear"></div>
+                </ul>
+                <div class= "clear"></div>
+            </footer>
         </div>
-
-
-
     </body>
-
-
 
 </html>
