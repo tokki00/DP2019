@@ -7,6 +7,7 @@
             header{
                 background-color: #02918c;
                 color: white;
+                padding: 5px 30px;
             }
             #logo_back{
                 color: #cfc91d;
@@ -14,7 +15,7 @@
             header>nav>ul>li{
                 float:left;
                 list-style: none;
-                padding: 0px 10px;
+                padding: 15px 10px;
             }
             .float_left{ float:left; }
             .float_right{ float: right; }
@@ -30,18 +31,94 @@
                 background-repeat: no-repeat;/*repeat, no-repeat, repeat-x, repeat-y*/
                 background-color: black;
                 background-position: 50% 50%;
+
+                color:white;
+                text-align: center;
+                font-weight: bold;
+                padding: 100px 0px;
+            }
+            #main_visual h2{
+                font-size: 40px;
+                font-weight: normal;
+                letter-spacing: 15px;
+                margin: 5px;
+            }
+            #visual_title_top{
+                font-size: 20px;
+            }
+            #visual_title_bottom{
+                font-size: 15px;
+
+            }
+            #main_visual img{
+                margin: 100px 0px 0px 0px;
+            }
+            section {
+                text-align: center;
+                
+            }
+            section h3{
+                color: #02918c;
+                font-size: 30px;
+                font-weight: normal;
+                margin: 80px 0px;
+            }
+            section p{
+                margin: 80px 0px;
+                padding: 0px 100px;
+            }
+            section>#about_list>li{
+                float: left;
+                width: 300px;
+                width: 25%;
+                width: calc(25% - (1px /4 * 3) - 40px - 40px);
+                list-style: none;
+                border-right: solid 1px #ccc;
+                padding: 40px;
+
+            }       
+            section dd{
+                margin: 0px;
+            }
+            section #about_list{
+                padding: 0px 100px; 
+            }
+
+            section>#about_list>li:nth-child(4){
+                border: none;
+            }
+            #work_list li{
+                list-style: none;
+                float: left;
+                width: 25%;
+            }
+            #work_list{
+                padding: 0px;
+            }
+            #work_list img{
+                width: 100%;
+                display: block;
+            }
+            body{
+                margin: 0px;
+            }
+            #wrap{
+                min-width: 900px;
+                max-width: 1920px;
+                margin-right: auto;
+                margin-left: auto;
             }
         </style>
 
     </head>
     <body>
-        <dvi id="wrap"></dvi>
+        <dvi id="wrap">
             <header>
             <h1 class="float_left">
-                <span>MY</span>
-                <span id="logo_back">FOLIO</span>
+                <span>MY</span><span id="logo_back">FOLIO</span>
+                <!-- div span 의미없이 구획나누기 좋음-->
             </h1>
-                <nav class="float_right">
+                <nav class="float_right">  
                     <ul>
                         <li>HOME</li>
                         <li>ABOUT ME</li>
@@ -53,9 +130,89 @@
                 </nav>
                 <div class="clear"></div>
             </header>
-            <div id="main_visual"></div>
-            <div>content1</div>
-            <div>content2</div>
+            <div id="main_visual">
+                <div id="visual_title_top">Lorem ipsum dolor sit iusmod tempor</div>
+                <h2>INCIDIDUNT BORE</h2>
+                <div id="visual_title_bottom">Orem ipsum dolor sit amet, consectetur</div>
+                <img src="images/layout2_button.jpg"/>
+            </div>
+            <section>
+                <h3>ABOUT ME</h3>
+                <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat duis aute irure dolor.                        
+                </p>
+                <ul id="about_list">
+                    <li>
+                        <img src="images/layout2_icon1.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, 
+                                sedo eiusmod tempor incidi 
+                                et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    
+                    <li>
+                        <img src="images/layout2_icon2.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, 
+                                sedo eiusmod tempor incidi 
+                                et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    
+                    <li>
+                        <img src="images/layout2_icon3.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, 
+                                sedo eiusmod tempor incidi 
+                                et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+
+                    <li>
+                        <img src="images/layout2_icon4.jpg"/>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, 
+                                sedo eiusmod tempor incidi 
+                                et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+            <section>
+                <h3>MY WORK</h3>
+                <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                </p>
+                <ul id="work_list">
+                    <li><img class="pic" src="images/layout2_pic1.jpg" /></li>
+                    <li><img class="pic" src="images/layout2_pic2.jpg" /></li>
+                    <li><img class="pic" src="images/layout2_pic3.jpg" /></li>
+                    <li><img class="pic" src="images/layout2_pic4.jpg" /></li>
+                    <li><img class="pic" src="images/layout2_pic5.jpg" /></li>
+                    <li><img class="pic" src="images/layout2_pic6.jpg" /></li>
+                    <li><img class="pic" src="images/layout2_pic7.jpg" /></li>
+                    <li><img class="pic" src="images/layout2_pic8.jpg" /></li>
+                    <div class="clear"></div>
+                </ul>
+
+            </section>
         </dvi>
     </body>
 </html>
