@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my</title>
+        <meta charset="utf-8">
+        <style>
+            header{
+                background-color: pink;
+                color: white;
+                padding: 5px 30px;
+            }
+            .float_left{
+                 float:left; 
+                }
+            .float_right{ 
+                float: right; 
+            }
+            .clear { 
+                clear: both; height:0; overflow:hidden; 
+            }
+            header{
+                margin: 0px;
+            }
+            header li{
+                    float: left;
+                    list-style: none;
+                    padding: 20px 20px 0px 0px;
+                }
+            #main_visual{ 
+            height: 500px;
+            background-image: url("images/my_main.jpg");
+            background-size: auto 100%;
+            background-size: cover;
+            background-repeat: no-repeat;/*repeat, no-repeat, repeat-x, repeat-y*/
+            background-color: black;
+            background-position: 50% 50%;
+
+            color:white;
+            text-align: center;
+            font-weight: bold;
+            padding: 100px 0px;
+            }
+            #main_visual h2{
+                font-size: 40px;
+                font-weight: bold;    
+                letter-spacing: 15px;
+                margin: 15px;
+            }
+            #visual_title_top{
+                font-size: 20px;
+            }
+            #visual_title_bottom{
+                font-size: 15px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="float_left">
+                <img src="images/my_head_logo.jpg" />
+            </h1>
+            <nav>
+                <ul h1 class="float_right">
+                    <li>ABOUT</li>
+                    <li>WORKS</li>
+                    <li>BLOG</li>
+                    <li>CONTACT US</li>
+                    <div class= "clear"></div>
+                </ul>
+            </nav>
+        <div class="clear"></div>   
+        </header>
+        <div id="main_visual">
+                <div id="visual_title_top">Lorem ipsum dolor sit iusmod tempor</div>
+                <h2>INCIDIDUNT BORE</h2>
+                <div id="visual_title_bottom">Orem ipsum dolor sit amet, consectetur</div>
+            </div>
+    </body>
+    <footer></footer>
+</html>
