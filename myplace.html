@@ -22,50 +22,130 @@
                 margin: 0px;
             }
             header li{
-                    float: left;
-                    list-style: none;
-                    padding: 20px 20px 0px 0px;
-                }
-            #main_visual{ 
-            height: 500px;
-            background-image: url("images/my_main.jpg");
-            background-size: auto 100%;
-            background-size: cover;
-            background-repeat: no-repeat;/*repeat, no-repeat, repeat-x, repeat-y*/
-            background-color: black;
-            background-position: 50% 50%;
-
-            color:white;
-            text-align: center;
-            font-weight: bold;
-            padding: 100px 0px;
+                float: left;
+                list-style: none;
+                padding: 20px 20px 0px 0px;
             }
-            #main_visual h2{
-                font-size: 40px;
-                font-weight: bold;    
+            #main_visual{ 
+                height: 400px;
+                background-image: url("images/my_main.jpg");
+                background-size: auto 100%;
+                background-size: cover;
+                background-repeat: no-repeat;/*repeat, no-repeat, repeat-x, repeat-y*/
+                background-color: black;
+                background-position: 50% 50%;
+
+                color:white;
+                text-align: center;
+                font-weight: bold;
+                padding: 150px 0px;
+            }
+            #main_visual h1{
+                color:pink;
+                font-size: 60px;
+                font-weight: normal;
+                font: bold;
                 letter-spacing: 15px;
-                margin: 15px;
+                margin: 0px;
+            background-color: white;
             }
             #visual_title_top{
-                font-size: 20px;
+                margin: 100px 0px 0px 0px;
+                font-size: 30px;
             }
             #visual_title_bottom{
-                font-size: 15px;
+                font-size: 30px;
 
             }
+            #main_visual img{
+                margin: 100px 0px 0px 0px;
+            }
+            .container:nth-child(1){background-color: #98f;}
+            .container:nth-child(2){background-color: #5d9;}
+            .container:nth-child(3){background-color: #f76;}
+            .container:nth-child(4){background-color: #ec5;}
+            .container{
+                padding: 30px;
+            }
+        
+            section {
+                width: 1500px;
+                margin-left: auto; /*바깥여백-왼쪽자동  */
+                margin-right: auto;
+            }  
+            h2{
+                color:pink;
+                font-size: 80px;
+                font-weight: normal;
+                margin: 80px 0px 20px 0px;
+                text-align: center;
+            }
+            h3{
+                color: white;
+                font-size: 35px;
+                margin: 0px 0px 0px 20px;
+            }
+            #hh {
+                text-align: center;
+                margin: 0px 0px 20px 0px;
+            }
+            .container:nth-child(1){background-color: #98f;}
+            .container:nth-child(2){background-color: #5d9;}
+            .container:nth-child(3){background-color: #f76;}
+            .container:nth-child(4){background-color: #ec5;}
+            .container{
+                padding: 30px;
+            }
+            .content_part{
+                float: left; /*둥둥떠다니게*/
+                width: 480px;
+                margin: 10px;
+            }
+            .container dt{
+                font-weight: bold;
+                margin-top: 25px; 
+                margin-right;: 0px;
+                margin-bottom: 25px;
+                margin-left: 0px;
+                margin: 25px; /*네 방향 모두*/
+                margin: 25px 0px; /*상하 좌우*/
+                margin: 25px 0px 25px 0px; /*시계방향 상우하좐*/
+            }
+            .clear{ 
+            clear:both;
+            height:0; overflow: hidden;
+            }
+            .card{
+                background-color: white;
+                border-right:solid 1px gray;
+                border-bottom:solid 1px gray;
+                width: 310px;
+            }
+            .card dd{
+                margin: 0px;
+            }
+            .card dt{
+                font-weight: bold;
+            }
+            #content li{
+                float: left;
+                list-style: none;
+                margin: 15px;
+            }
+
         </style>
     </head>
     <body>
         <header>
             <h1 class="float_left">
-                <img src="images/my_head_logo.jpg" />
+                <img src="images/my_head_logo.png" />
             </h1>
             <nav>
                 <ul h1 class="float_right">
                     <li>ABOUT</li>
                     <li>WORKS</li>
-                    <li>BLOG</li>
-                    <li>CONTACT US</li>
+                    <li>TRAVEL</li>
+                    <li>CONTACT ME</li>
                     <div class= "clear"></div>
                 </ul>
             </nav>
@@ -73,8 +153,134 @@
         </header>
         <div id="main_visual">
                 <div id="visual_title_top">Lorem ipsum dolor sit iusmod tempor</div>
-                <h2>INCIDIDUNT BORE</h2>
+                <h1>MY STORY</h1>
                 <div id="visual_title_bottom">Orem ipsum dolor sit amet, consectetur</div>
+        </div>
+        <div>
+            <h2>WORK</h2>
+            <p id="hh">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+            </p>
+                <section>
+                    
+                    <div class="container">
+                        <h3>RABBIT CHARACTER DESIGN</h3>
+                            <div id="content">
+                                <ul id="work_list">
+                                    <li class="card">
+                                        <div class="visual">
+                                            <img src="images/my_img (1).jpg"/>
+                                            <div class="category">
+                                                TIME
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <dl>Dulux Colour Awards</dl>
+                                            <dd>
+                                                <div class="date">12th October 2011</div>
+                                                <div class="long_line"></div>
+                                                    <p>
+                                                        A direct mail kit that announces the Dulux 
+                                                        Colour Awards Competition has commenced. A 
+                                                        collection of posters showing the famous colours 
+                                                        of history, advertises you add your own colours 
+                                                        to history
+                                                    </p>
+                                                    <div class="long_line"></div>
+                                                <div>Read On →</div>
+                                            </dd>
+
+                                        </div>
+                                    </li>
+                                        <li class="card">
+                                            <div class="visual">
+                                                <img src="images/my_img (2).jpg"/>
+                                                <div class="category">
+                                                    SNOW
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <dl>Dulux Colour Awards</dl>
+                                                <dd>
+                                                    <div class="date">12th October 2011</div>
+                                                    <div class="long_line"></div>
+                                                        <p>
+                                                            A direct mail kit that announces the Dulux 
+                                                            Colour Awards Competition has commenced. A 
+                                                            collection of posters showing the famous colours 
+                                                            of history, advertises you add your own colours 
+                                                            to history
+                                                        </p>
+                                                        <div class="long_line"></div>
+                                                    <div>Read On →</div>
+                                                </dd>
+                                            </div>
+                                            </li>
+                                    <li class="card">
+                                        <div class="visual">
+                                            <img src="images/my_img (3).jpg"/>
+                                            <div class="category">
+                                                BUBBLE GUM
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <dl>Dulux Colour Awards</dl>
+                                            <dd>
+                                                <div class="date">12th October 2011</div>
+                                                <div class="long_line"></div>
+                                                    <p>
+                                                        A direct mail kit that announces the Dulux 
+                                                        Colour Awards Competition has commenced. A 
+                                                        collection of posters showing the famous colours 
+                                                        of history, advertises you add your own colours 
+                                                        to history
+                                                    </p>
+                                                    <div class="long_line"></div>
+                                                <div>Read On →</div>
+                                            </dd>
+
+                                        </div>
+                                    </li>
+                                    <li class="card">
+                                        <div class="visual">
+                                            <img src="images/my_img (4).jpg"/>
+                                            <div class="category">
+                                                FUCK YOU
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <dl>Dulux Colour Awards</dl>
+                                            <dd>
+                                                <div class="date">12th October 2011</div>
+                                                <div class="long_line"></div>
+                                                    <p>
+                                                        A direct mail kit that announces the Dulux 
+                                                        Colour Awards Competition has commenced. A 
+                                                        collection of posters showing the famous colours 
+                                                        of history, advertises you add your own colours 
+                                                        to history
+                                                    </p>
+                                                    <div class="long_line"></div>
+                                                <div>Read On →</div>
+                                            </dd>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                <div class="clear"></div>
+            </section>
+        </div> 
+        <div class="container">
+                <section>
+                    <h3>Wep Design</h3>
+                    <div class="content_part">
+                        
+                    </div>
+                        <div class="clear"></div>
+                </section>
             </div>
     </body>
     <footer></footer>
