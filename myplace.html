@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>my</title>
+        <title>MY PLACE</title>
         <meta charset="utf-8">
         <style>
-            header{
+            header {
                 background-color: pink;
                 color: white;
                 padding: 5px 30px;
+                margin: 0;
             }
-            .float_left{
-                 float:left; 
-                }
-            .float_right{ 
-                float: right; 
+            .float_left {
+                float: left;
             }
-            .clear { 
-                clear: both; height:0; overflow:hidden; 
+            .float_right {
+                float: right;
             }
-            header{
-                margin: 0px;
+            .clear {
+                clear: both;
+                height: 0;
+                overflow: hidden;
             }
-            header li{
+            header li {
                 float: left;
                 list-style: none;
-                padding: 20px 20px 0px 0px;
+                padding: 20px 20px 0 0;
             }
-            #main_visual{ 
+            #main_visual {
                 height: 400px;
                 background-image: url("images/my_main.jpg");
                 background-size: auto 100%;
@@ -34,351 +34,371 @@
                 background-repeat: no-repeat;
                 background-color: black;
                 background-position: 50% 50%;
-                color:white;
+                color: white;
                 text-align: center;
                 font-weight: bold;
-                padding: 150px 0px;
+                padding: 150px 0;
             }
-            #main_visual h1{
-                color:pink;
+            #main_visual h1 {
+                color: pink;
                 font-size: 90px;
                 font-weight: normal;
                 font: bold;
                 letter-spacing: 15px;
-                margin: 100px 0px 0px 0px;
-                background-color: white;    
+                margin: 100px 0 0;
+                background-color: white;
             }
-            #visual_title_bottom{
+            #visual_title_bottom {
                 font-size: 30px;
-
             }
-            #main_visual img{
-                margin: 100px 0px 0px 0px;
+            #main_visual img {
+                margin: 100px 0 0;
             }
-        
             section {
                 width: 1500px;
                 margin-left: auto; /*바깥여백-왼쪽자동  */
                 margin-right: auto;
-            }  
-            h2{
-                color:pink;
+            }
+            h2 {
+                color: pink;
                 font: bold;
                 font-size: 80px;
                 font-weight: normal;
-                margin: 80px 0px 20px 0px;
+                margin: 80px 0 20px;
                 text-align: center;
             }
-            h3{
+            h3 {
                 color: white;
                 font-size: 35px;
-                margin: 0px 0px 0px 20px;   
+                margin: 0 0 0 20px;
             }
-            .container{
+            .container {
                 background-color: pink;
                 padding: 30px;
             }
-            .content_part{
+            .content_part {
                 float: left; /*둥둥떠다니게*/
                 width: 480px;
                 margin: 10px;
             }
-            .container dt{
+            .container dt {
                 font-weight: bold;
-                margin-top: 25px; 
-                margin-right;: 0px;
-                margin-bottom: 25px;
-                margin-left: 0px;
-                margin: 25px; /*네 방향 모두*/
-                margin: 25px 0px; /*상하 좌우*/
-                margin: 25px 0px 25px 0px; /*시계방향 상우하좐*/
+                margin: 25px 0;
+                margin-right;
+                : 0; /*네 방향 모두*/ /*상하 좌우*/ /*시계방향 상우하좐*/
             }
-            .clear{ 
-                clear:both;
-                height:0; overflow: hidden;
+            .clear {
+                clear: both;
+                height: 0;
+                overflow: hidden;
             }
-            .card{
+            .card {
                 background-color: white;
                 width: 321px;
             }
-            .card dd{
-                margin: 0px;
+            .card dd {
+                margin: 0;
             }
-            .card dt{
+            .card dt {
                 font-weight: bold;
             }
-            #content li{
+            #content li {
                 float: left;
                 list-style: none;
                 margin: 15px;
             }
-            .visual{
+            .visual {
                 position: static;
-                position: relative;/*관계형*/
-                bottom: 0px;
-                left: 0px;
+                position: relative; /*관계형*/
+                bottom: 0;
+                left: 0;
             }
-            .visual img{
-                display: inline-block;/*이경우 소문자 pjgy등을 표시할 공간이 필요*/
+            .visual img {
+                display: inline-block; /*이경우 소문자 pjgy등을 표시할 공간이 필요*/
                 display: block;
             }
-            .info{
+            .info {
                 padding: 20px;
             }
-            .category{
+            .category {
                 background-color: black;
                 color: white;
                 display: block;
                 display: inline-block;
-                padding: 2px 5px 5px 5px;
+                padding: 2px 5px 5px;
                 position: static; /*위치:정적인 (기본형)*/
-                position: absolute;/*절대적인*/
-                bottom: 0px;
-                left: 0px;
+                position: absolute; /*절대적인*/
+                bottom: 0;
+                left: 0;
                 opacity: 50%;
             }
-            #work_list li{
+            #work_list li {
                 list-style: none;
                 float: left;
                 width: 25%;
             }
-            #work_list{
-                padding: 0px;
+            #work_list {
+                padding: 0;
             }
-            #work_list img{
+            #work_list img {
                 width: 100%;
                 display: block;
             }
-
+            footer li {
+                float: left;
+                list-style: none;
+                padding: 20px 20px 0 0;
+            }
+            footer {
+                background: #999;
+                padding: 30px;
+            }
         </style>
     </head>
     <body>
         <header>
             <h1 class="float_left">
-                <img src="images/my_head_logo.png" />
+                <img src="images/my_head_logo.png"/>
             </h1>
             <nav>
                 <ul h1 class="float_right">
-                    <li>ABOUT</li>
-                    <li>WORKS</li>
-                    <li>TRAVEL</li>
-                    <li>CONTACT ME</li>
-                    <div class= "clear"></div>
+                    <li>
+                        <a href="myplace.html" target="_self">MY PLACE</a>
+                    </li>
+                    <li>
+                        <a href="layout.html" target="_self">LAYOUT1</a>
+                    </li>
+                    <li>
+                        <a href="layout2.html" target="_self">LAYOUT3</a>
+                    </li>
+                    <li>
+                        <a href="layout3.html" target="_self">LAYOUT2</a>
+                    </li>
+                    <div class="clear"></div>
                 </ul>
             </nav>
-        <div class="clear"></div>   
+            <div class="clear"></div>
         </header>
         <div id="main_visual">
-                <h1>RABBIT HOLE</h1>
-                <div id="visual_title_bottom">WELCOME TO MY WORLD</div>
+            <h1>RABBIT HOLE</h1>
+            <div id="visual_title_bottom">WELCOME TO MY WORLD</div>
         </div>
         <div>
             <h2 id="">WORK</h2>
-                <section class="container">
-                        <h3>RABBIT CHARACTER DESIGN</h3>
-                            <div id="content">
-                                <ul>
-                                    <li class="card">
-                                        <div class="visual">
-                                            <img src="images/my_img (1).jpg"/>
-                                            <div class="category">
-                                                TIME
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <dl>Dulux Colour Awards</dl>
-                                            <dd>
-                                                <div class="date">12th October 2011</div>
-                                                <div class="long_line"></div>
-                                                    <p>
-                                                        A direct mail kit that announces the Dulux 
-                                                        Colour Awards Competition has commenced. A 
-                                                        collection of posters showing the famous colours 
-                                                        of history, advertises you add your own colours 
-                                                        to history
-                                                    </p>
-                                                    <div class="long_line"></div>
-                                                <div>Read On →</div>
-                                            </dd>
-
-                                        </div>
-                                    </li>
-                                        <li class="card">
-                                            <div class="visual">
-                                                <img src="images/my_img (2).jpg"/>
-                                                <div class="category">
-                                                    SNOW
-                                                </div>
-                                            </div>
-                                            <div class="info">
-                                                <dl>Dulux Colour Awards</dl>
-                                                <dd>
-                                                    <div class="date">12th October 2011</div>
-                                                    <div class="long_line"></div>
-                                                        <p>
-                                                            A direct mail kit that announces the Dulux 
-                                                            Colour Awards Competition has commenced. A 
-                                                            collection of posters showing the famous colours 
-                                                            of history, advertises you add your own colours 
-                                                            to history
-                                                        </p>
-                                                        <div class="long_line"></div>
-                                                    <div>Read On →</div>
-                                                </dd>
-                                            </div>
-                                            </li>
-                                    <li class="card">
-                                        <div class="visual">
-                                            <img src="images/my_img (3).jpg"/>
-                                            <div class="category">
-                                                BUBBLE GUM
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <dl>Dulux Colour Awards</dl>
-                                            <dd>
-                                                <div class="date">12th October 2011</div>
-                                                <div class="long_line"></div>
-                                                    <p>
-                                                        A direct mail kit that announces the Dulux 
-                                                        Colour Awards Competition has commenced. A 
-                                                        collection of posters showing the famous colours 
-                                                        of history, advertises you add your own colours 
-                                                        to history
-                                                    </p>
-                                                    <div class="long_line"></div>
-                                                <div>Read On →</div>
-                                            </dd>
-
-                                        </div>
-                                    </li>
-                                    <li class="card">
-                                        <div class="visual">
-                                            <img src="images/my_img (4).jpg"/>
-                                            <div class="category">
-                                                FUCK YOU
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <dl>Dulux Colour Awards</dl>
-                                            <dd>
-                                                <div class="date">12th October 2011</div>
-                                                <div class="long_line"></div>
-                                                    <p>
-                                                        A direct mail kit that announces the Dulux 
-                                                        Colour Awards Competition has commenced. A 
-                                                        collection of posters showing the famous colours 
-                                                        of history, advertises you add your own colours 
-                                                        to history
-                                                    </p>
-                                                    <div class="long_line"></div>
-                                                <div>Read On →</div>
-                                            </dd>
-
-                                        </div>
-                                    </li>
-                                </ul>
+            <section class="container">
+                <h3>RABBIT CHARACTER DESIGN</h3>
+                <div id="content">
+                    <ul>
+                        <li class="card">
+                            <div class="visual">
+                                <img src="images/my_img (1).jpg"/>
+                                <div class="category">
+                                    TIME
+                                </div>
                             </div>
+                            <div class="info">
+                                <dd>
+                                    <div class="date">2016-03-23</div>
+                                    <div class="long_line"></div>
+                                    <p>
+                                        이 그림을 그리게된 것은 컴퓨터를 사
+                                                                                               고 원하는 바탕화면이 없어서 직접 그려야 겠다는 생각 으로
+                                                                                               나를 잘 표현하고 나만 갖고 있는 그런 바탕화면을 원해서
+                                                                                               그리게 되었다. 이걸 계기로 나의
+                                        <strong>TOKKI</strong>캐릭터의 시작이 되었다.
+                                    </p>
+                                    <div class="long_line"></div>
+                                </dd>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="visual">
+                                <img src="images/my_img (2).jpg"/>
+                                <div class="category">
+                                    SNOW
+                                </div>
+                            </div>
+                            <div class="info">
+                                <dd>
+                                    <div class="date">2019-02-24</div>
+                                    <div class="long_line"></div>
+                                    <p>
+                                        전역하고  겨울에 친구들과 같이 여행을 갔던 것을 기억하려고 그린 작품입니다.
+                                                                                                    여행을 하고나서 매번 이렇게 추억을 되새기며 그림을 그리는 것을 좋아해 많은 작품들이 
+                                                                                                    제게는 많은 의미가 담겨있기도 합니다.
+                                    </p>
+                                    <div class="long_line"></div>
+                                </dd>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="visual">
+                                <img src="images/my_img (3).jpg"/>
+                                <div class="category">
+                                    BUBBLE GUM
+                                </div>
+                            </div>
+                            <div class="info">
+                                <dd>
+                                    <div class="date">2017-03-28</div>
+                                    <div class="long_line"></div>
+                                    <p>
+                                        포도껌이라는 주제로 그레비티 컨셉의 일러스트를 외주를 받아 작업한 작품입니다.
+                                                                                                외주를 신청한 분이 지금은 사용하고 있지 않아 너무 마음에 들어서
+                                                                                                제가 다시 받아와 로고로 사용하고 있는 작품입니다.
+                                    </p>
+                                    <div class="long_line"></div>
+                                </dd>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="visual">
+                                <img src="images/my_img (4).jpg"/>
+                                <div class="category">
+                                    FUCK YOU
+                                </div>
+                            </div>
+                            <div class="info">
+                                <dd>
+                                    <div class="date">2019-07-19</div>
+                                    <div class="long_line"></div>
+                                    <p>
+                                        남들 눈치 안보고 자기가 원하고 좋아하는것을 할 수 있는 TOKKI.
+                                                                                                제가 원하고 지금도 그렇게 살고있는걸 그대로 보여주는 TOKKI 캐릭터는
+                                                                                                다른 사람들 에게 원하는것을 놓지고 후회하지 말라는 그런 의미가 있습니다.
+                                    </p>
+                                    <div class="long_line"></div>
+                                </dd>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
                 <div class="clear"></div>
             </section>
             <section class="container">
-                    <h3>IABSTUDIO CHARACTER DESIGN</h3>
-                        <div id="content">
-                            <ul>
-                                <li class="card">
-                                    <div class="visual">
-                                        <img src="images/my_img (5).jpg"/>
-                                        <div class="category">
-                                            IAB STUDIO
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <dl>Dulux Colour Awards</dl>
-                                        <dd>
-                                            <div class="date">12th October 2011</div>
-                                            <div class="long_line"></div>
-                                                <p>
-                                                    A direct mail kit that announces the Dulux 
-                                                    Colour Awards Competition has commenced. A 
-                                                    collection of posters showing the famous colours 
-                                                    of history, advertises you add your own colours 
-                                                    to history
-                                                </p>
-                                                <div class="long_line"></div>
-                                            <div>Read On →</div>
-                                        </dd>
-
-                                    </div>
-                                </li>
-                                    <li class="card">
-                                        <div class="visual">
-                                            <img src="images/my_img (6).jpg"/>
-                                            <div class="category">
-                                                POSE1
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <dl>Dulux Colour Awards</dl>
-                                            <dd>
-                                                <div class="date">12th October 2011</div>
-                                                <div class="long_line"></div>
-                                                    <p>
-                                                        A direct mail kit that announces the Dulux 
-                                                        Colour Awards Competition has commenced. A 
-                                                        collection of posters showing the famous colours 
-                                                        of history, advertises you add your own colours 
-                                                        to history
-                                                    </p>
-                                                    <div class="long_line"></div>
-                                                <div>Read On →</div>
-                                            </dd>
-                                        </div>
-                                        </li>
-                                <li class="card">
-                                    <div class="visual">
-                                        <img src="images/my_img (7).jpg"/>
-                                        <div class="category">
-                                            POSE2
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <dl>Dulux Colour Awards</dl>
-                                        <dd>
-                                            <div class="date">12th October 2011</div>
-                                            <div class="long_line"></div>
-                                                <p>
-                                                    A direct mail kit that announces the Dulux 
-                                                    Colour Awards Competition has commenced. A 
-                                                    collection of posters showing the famous colours 
-                                                    of history, advertises you add your own colours 
-                                                    to history
-                                                </p>
-                                                <div class="long_line"></div>
-                                            <div>Read On →</div>
-                                        </dd>
-
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>  
-            <div class="clear"></div>
-        </section>
-        <section class="container">
-            <h3>PERSONAL WORK</h3>
-            <ul id="work_list">
-                <li><img class="pic" src="images/my_img (8).jpg" /></li>
-                <li><img class="pic" src="images/my_img (9).jpg" /></li>
-                <li><img class="pic" src="images/my_img (10).jpg" /></li>
-                <li><img class="pic" src="images/my_img (11).jpg" /></li>
-                <li><img class="pic" src="images/my_img (12).jpg" /></li>
-                <li><img class="pic" src="images/my_img (13).jpg" /></li>
-                <li><img class="pic" src="images/my_img (14).jpg" /></li>
-                <li><img class="pic" src="images/my_img (15).jpg" /></li>
+                <h3>IABSTUDIO CHARACTER DESIGN</h3>
+                <div id="content">
+                    <ul>
+                        <li class="card">
+                            <div class="visual">
+                                <img src="images/my_img (5).jpg"/>
+                                <div class="category">
+                                    IAB STUDIO
+                                </div>
+                            </div>
+                            <div class="info">
+                                <dd>
+                                    <div class="date">2019-05-01</div>
+                                    <div class="long_line"></div>
+                                    <p>
+                                        IAB STUDIO 브랜드에서 마스코트 공모전을 위하여 그린 작품입니다....
+                                                                                            아쉽게도 선택은 못 받았지만 좋아하는 브랜드의 마스코트를 그리는 작업이어서
+                                                                                            재미있었고 나름 예쁘게 나와 볼 때마다 아쉽습니다 ㅠ
+                                    </p>
+                                    <div class="long_line"></div>
+                                </dd>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="visual">
+                                <img src="images/my_img (6).jpg"/>
+                                <div class="category">
+                                    POSE1
+                                </div>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="visual">
+                                <img src="images/my_img (7).jpg"/>
+                                <div class="category">
+                                    POSE2
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section class="container">
+                <h3>PERSONAL WORK</h3>
+                <ul id="work_list">
+                    <li><img class="pic" src="images/my_img (8).jpg"/></li>
+                    <li><img class="pic" src="images/my_img (9).jpg"/></li>
+                    <li><img class="pic" src="images/my_img (10).jpg"/></li>
+                    <li><img class="pic" src="images/my_img (11).jpg"/></li>
+                    <li><img class="pic" src="images/my_img (12).jpg"/></li>
+                    <li><img class="pic" src="images/my_img (13).jpg"/></li>
+                    <li><img class="pic" src="images/my_img (14).jpg"/></li>
+                    <li><img class="pic" src="images/my_img (15).jpg"/></li>
+                    <li><img class="pic" src="images/my_img (16).jpg"/></li>
+                    <li><img class="pic" src="images/my_img (17).jpg"/></li>
+                    <li><img class="pic" src="images/my_img (18).jpg"/></li>
+                    <li><img class="pic" src="images/my_img (19).jpg"/></li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+            <section class="container">
+                <h3>THE TRIP I LEFT</h3>
+                <ul id="work_list">
+                    <li><img class="pic" src="images/Travel (1).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (2).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (3).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (4).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (5).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (6).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (7).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (8).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (9).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (10).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (11).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (12).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (13).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (15).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (16).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (17).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (18).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (19).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (20).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (21).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (22).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (23).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (24).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (25).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (26).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (27).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (28).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (29).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (30).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (31).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (32).jpg"/></li>
+                    <li><img class="pic" src="images/Travel (33).jpg"/></li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+        </div>
+    </body>
+    <footer>
+        <div class="float_left">
+            <ul class="float_left">
+                <li>
+                    <a href="https://www.instagram.com/tokki_0_0/" target="_blank"><img src="images/sns_01.png"/></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCTPkewFBPrT_wRrMLrkzn8w" target="_blank"><img src="images/sns_02.png"/></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100004937922133" target="_blank"><img src="images/sns_03.png"/></a>
+                </li>
                 <div class="clear"></div>
             </ul>
-
-        </section>
-        </div> 
-    </body>
-    <footer></footer>
+            <div class="clear"></div>
+            <div>
+                ⓒ 2019  Kaywon University of Art & Design.
+            </div>
+            <div>
+                ⓒTOKKI00
+            </div>
+        </div>
+        <div class="clear"></div>
+    </footer>
 </html>
